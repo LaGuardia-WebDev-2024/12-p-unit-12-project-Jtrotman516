@@ -1,14 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
+  <style>
+    body {
+      background-color: rgb(149, 194, 140);
+    }
+    .photo {
+      width: 200px;
+      margin: 20px;
+      border: 5px solid rgb(106, 153, 146);
+      padding: 5px;
+    }
+    #mem1-button {
+      background-color: yellow;
+          }
+  </style>
+  <body>
+    <button id="mem1-button">Memory #1</button>
+    <button id="mem2-button">Memory #2</button>
+    <button id="mem3-button">Memory #3</button>
+    <center>
+      <h1>My Top 3 Memories of <span>This Year</span></h1>
+      <ol>
+        <li>
+          <h3 id="mem1">My BIRTHDAYYYYY</h3>
 
-html {
-  background-color: white;
-  padding-left: 20px;
-}
+          <p>
+            3/5<br />
+            The Worlds favorite Holiday
+          </p>
+          <p Class= "me">
+            ME ME ME
+          </p>
 
-img{
-  border-radius: 30px;
-}
+          <img
+            id="pisces"
+            class="photo"
+            src=""
+            width="200"
+             style="display: none"
+        
+          />
+        </li>
 
-h1 {
-  font-family: "Poetsen One", sans-serif;
-}
+        <li>
+          <h3 id="mem2">Weekend with Nicholette</h3>
+          <p>Poconos</p>
+          <img
+            id="snow"
+            class="photo"
+            src="https://cdn.glitch.global/909057e8-c1e3-4f5a-b9e7-b785811aa99b/IMG_8855.JPG?v=1745422424329"
+            width="200"
+            style="display: none"
+          />
+        </li>
+
+        <li>
+          <h3 id="mem3">Senior ART Show</h3>
+          <p class= "me">
+            ME ME ME
+          </p>
+          <p>Most of my paintings</p>
+           
+          <img
+            id="paint"
+            class="photo"
+            src="https://cdn.glitch.global/909057e8-c1e3-4f5a-b9e7-b785811aa99b/IMG_1585.PNG?v=1745425567727"
+            width="200"
+            style="display: none"
+          />
+        </li>
+      </ol>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script>
+        $("#mem1-button").click(function () {
+          $("#mem1").css("color", "purple");
+          $("#pisces").show(2000);
+        });
+
+        $("#mem2-button").click(function () {
+          $("#mem2").css("color", "blue");
+          $("#snow").show(2000);
+        });
+
+        $("#mem3-button").click(function () {
+          $("#mem3").css("color", "pink");
+          $("#paint").show(2000);
+        });
+        $("h1").text("TOP MEMORIES OF 2025");
+$(".me").text("ALL bout yours truly,")
+      </script>
+    </center>
+  </body>
+</html>
